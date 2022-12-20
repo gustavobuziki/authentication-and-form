@@ -25,7 +25,7 @@ const Login = () => {
 
     logIn(data);
 
-    alert("Dados envados com sucesso!");
+    alert("Dados enviados com sucesso!");
   };
 
   return (
