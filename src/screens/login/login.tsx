@@ -25,7 +25,7 @@ const Login = () => {
 
     logIn(data);
 
-    alert("Dados envados com sucesso!");
+    alert("Dados enviados com sucesso!");
   };
 
   return (
@@ -69,7 +69,7 @@ const Login = () => {
           </>
         </div>
 
-        <s.ButtonSubmit type="submit">Log In</s.ButtonSubmit>
+        <s.ButtonSubmit type="submit">LogIn</s.ButtonSubmit>
       </s.Form>
     </s.Container>
   );
