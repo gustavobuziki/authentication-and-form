@@ -1,18 +1,18 @@
-import { Routes as Switch, Route } from "react-router-dom";
+import { Routes as Switch, Route, Navigate } from "react-router-dom";
 
 import { ProtectedRoute, PublicRoute, RoutePaths } from "./";
 import { Home, Login } from "../screens";
 
 const Routes = () => {
-  const authenticated = true;
-
   return (
     <Switch>
-      <Route element={<ProtectedRoute authenticated={authenticated} />}>
+      <Route element={<ProtectedRoute />}>
         <Route path={RoutePaths.home} element={<Home />} />
+        <Route path="*" element={<Navigate to="/home" />} />
       </Route>
-      <Route element={<PublicRoute authenticated={authenticated} />}>
+      <Route element={<PublicRoute />}>
         <Route path={RoutePaths.login} element={<Login />} />
+        <Route path="*" element={<Navigate to="/login" />} />
       </Route>
     </Switch>
   );

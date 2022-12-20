@@ -1,5 +1,5 @@
 const RoutePaths = {
-  login: "/login",
+  login: "/",
   home: "/home",
 };
 

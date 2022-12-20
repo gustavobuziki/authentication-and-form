@@ -24,8 +24,6 @@ const Login = () => {
     setValue("name", "");
 
     logIn(data);
-
-    alert("Dados envados com sucesso!");
   };
 
   return (
