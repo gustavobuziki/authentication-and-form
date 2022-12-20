@@ -69,7 +69,7 @@ const Login = () => {
           </>
         </div>
 
-        <s.ButtonSubmit type="submit">Log In</s.ButtonSubmit>
+        <s.ButtonSubmit type="submit">Login</s.ButtonSubmit>
       </s.Form>
     </s.Container>
   );
