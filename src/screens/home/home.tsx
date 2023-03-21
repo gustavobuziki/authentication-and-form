@@ -6,6 +6,18 @@ import * as s from "./styled-home";
 const Home = () => {
   const { logOut, userData } = useContext(AuthContext);
 
+  const array = [
+    'batata',
+    'cenoura',
+    'maça',
+    'banana',
+    'acerola',
+    'pitaya',
+    'uva',
+  ]
+
+  console.log(array.sort(Intl.Collator().compare))
+
   return (
     <s.Container>
       <s.Main>
