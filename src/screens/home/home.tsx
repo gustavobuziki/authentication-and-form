@@ -16,6 +16,8 @@ const Home = () => {
     'uva',
   ]
 
+  //a função acima é capaz de deixar um array em ordem alfabética
+
   console.log(array.sort(Intl.Collator().compare))
 
   return (
